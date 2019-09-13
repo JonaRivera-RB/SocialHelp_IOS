@@ -874,7 +874,7 @@
         <!--MainVC-->
         <scene sceneID="qP7-AE-FhI">
             <objects>
-                <viewController storyboardIdentifier="InicioVC" id="CMl-cn-pKC" customClass="MainVC" customModule="SocialHelp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InicioVC2" id="CMl-cn-pKC" customClass="MainVC" customModule="SocialHelp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E8z-1x-mvT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1017,7 +1017,7 @@
             </objects>
             <point key="canvasLocation" x="5149" y="-275"/>
         </scene>
-        <!--AlertVC-->
+        <!--Item-->
         <scene sceneID="WQf-l3-96V">
             <objects>
                 <viewController storyboardIdentifier="AlertVC" id="38O-co-EE8" customClass="AlertVC" customModule="SocialHelp" customModuleProvider="target" sceneMemberID="viewController">
@@ -1188,10 +1188,10 @@
                                 </subviews>
                             </stackView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="L5B-3f-sJJ">
-                                <rect key="frame" x="41.5" y="366" width="331" height="406"/>
+                                <rect key="frame" x="41.5" y="366" width="331" height="357"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JE1-Bv-b6F" customClass="MiddleCircleButton" customModule="SocialHelp" customModuleProvider="target">
-                                <rect key="frame" x="73" y="792" width="262" height="50"/>
+                                <rect key="frame" x="73" y="743" width="262" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="f5N-pM-Sw5"/>
@@ -1241,6 +1241,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BM1-qS-Enm"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Tet-qd-33d"/>
                     <connections>
                         <outlet property="mapView" destination="L5B-3f-sJJ" id="2S4-hm-HFy"/>
                         <outlet property="sendAlertBtn" destination="JE1-Bv-b6F" id="nWS-xs-Itu"/>
@@ -1255,9 +1256,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ESX-Ym-cMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6331.884057971015" y="-275.22321428571428"/>
+            <point key="canvasLocation" x="7184" y="-900"/>
         </scene>
-        <!--MapVC-->
+        <!--Item-->
         <scene sceneID="oHq-sy-3Yy">
             <objects>
                 <viewController storyboardIdentifier="MapVC" id="S4X-O6-W77" customClass="MapVC" customModule="SocialHelp" customModuleProvider="target" sceneMemberID="viewController">
@@ -1266,25 +1267,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X7A-h7-qcG">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="847"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6J8-MG-U5K" customClass="MiddleCircleButton" customModule="SocialHelp" customModuleProvider="target">
-                                <rect key="frame" x="374" y="682" width="30" height="30"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="374" y="733" width="30" height="30"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="Lca-9l-qrd"/>
                                     <constraint firstAttribute="height" constant="30" id="snh-MS-sGM"/>
                                 </constraints>
                                 <state key="normal" image="help"/>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXx-uy-6YC">
-                                <rect key="frame" x="0.0" y="762" width="414" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="jhf-Lx-COu"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WO-GK-r0v" customClass="CircleDesignButton" customModule="SocialHelp" customModuleProvider="target">
-                                <rect key="frame" x="172" y="692" width="80" height="80"/>
+                                <rect key="frame" x="172" y="663" width="80" height="80"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Eq6-iT-fC4"/>
@@ -1299,7 +1294,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaK-tu-lDX" customClass="MiddleCircleButton" customModule="SocialHelp" customModuleProvider="target">
                                 <rect key="frame" x="20" y="84" width="50" height="50"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0XC-sU-4Kq"/>
                                     <constraint firstAttribute="width" constant="50" id="96H-6o-wtz"/>
@@ -1312,7 +1307,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rT-16-Qh4" customClass="MiddleCircleButton" customModule="SocialHelp" customModuleProvider="target">
                                 <rect key="frame" x="344" y="84" width="50" height="50"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="bJu-Av-fDj"/>
                                     <constraint firstAttribute="height" constant="50" id="tkf-DQ-yKe"/>
@@ -1323,8 +1318,8 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEX-v8-c5U" customClass="MiddleCircleButton" customModule="SocialHelp" customModuleProvider="target">
-                                <rect key="frame" x="374" y="642" width="30" height="30"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="374" y="693" width="30" height="30"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="oga-G2-Qqv"/>
                                     <constraint firstAttribute="width" constant="30" id="yKb-YA-h0S"/>
@@ -1337,23 +1332,21 @@
                             <constraint firstItem="0rT-16-Qh4" firstAttribute="top" secondItem="Bkw-Nx-5HF" secondAttribute="top" constant="40" id="0IC-pw-BcP"/>
                             <constraint firstItem="Bkw-Nx-5HF" firstAttribute="trailing" secondItem="0rT-16-Qh4" secondAttribute="trailing" constant="20" id="2Oh-Ou-XHm"/>
                             <constraint firstItem="X7A-h7-qcG" firstAttribute="top" secondItem="Bkw-Nx-5HF" secondAttribute="top" constant="-44" id="4SE-DV-18u"/>
+                            <constraint firstItem="Bkw-Nx-5HF" firstAttribute="bottom" secondItem="6J8-MG-U5K" secondAttribute="bottom" constant="50" id="8Qo-Tv-ep6"/>
                             <constraint firstItem="iaK-tu-lDX" firstAttribute="leading" secondItem="Bkw-Nx-5HF" secondAttribute="leading" constant="20" id="A0K-jp-N8w"/>
+                            <constraint firstItem="Bkw-Nx-5HF" firstAttribute="bottom" secondItem="6WO-GK-r0v" secondAttribute="bottom" constant="70" id="E4Y-TQ-Au3"/>
                             <constraint firstItem="iaK-tu-lDX" firstAttribute="top" secondItem="Bkw-Nx-5HF" secondAttribute="top" constant="40" id="JnH-Mr-QLd"/>
-                            <constraint firstItem="Bkw-Nx-5HF" firstAttribute="bottom" secondItem="FXx-uy-6YC" secondAttribute="bottom" id="KaU-JF-FBw"/>
                             <constraint firstItem="Bkw-Nx-5HF" firstAttribute="trailing" secondItem="6J8-MG-U5K" secondAttribute="trailing" constant="10" id="PMS-U3-j1T"/>
                             <constraint firstItem="6J8-MG-U5K" firstAttribute="top" secondItem="PEX-v8-c5U" secondAttribute="bottom" constant="10" id="T6u-tF-bZq"/>
                             <constraint firstItem="Bkw-Nx-5HF" firstAttribute="trailing" secondItem="X7A-h7-qcG" secondAttribute="trailing" id="WPU-OP-8KE"/>
                             <constraint firstItem="Bkw-Nx-5HF" firstAttribute="bottom" secondItem="X7A-h7-qcG" secondAttribute="bottom" constant="-34" id="WoE-XH-Bf6"/>
                             <constraint firstItem="X7A-h7-qcG" firstAttribute="leading" secondItem="Bkw-Nx-5HF" secondAttribute="leading" id="Xpw-XF-pxR"/>
-                            <constraint firstItem="FXx-uy-6YC" firstAttribute="leading" secondItem="Bkw-Nx-5HF" secondAttribute="leading" id="aYd-VV-VW6"/>
-                            <constraint firstItem="FXx-uy-6YC" firstAttribute="top" secondItem="6J8-MG-U5K" secondAttribute="bottom" constant="50" id="jyk-u1-lBm"/>
                             <constraint firstItem="6WO-GK-r0v" firstAttribute="centerX" secondItem="OFV-YP-VZT" secondAttribute="centerX" constant="5" id="lZQ-s7-UaG"/>
                             <constraint firstItem="Bkw-Nx-5HF" firstAttribute="trailing" secondItem="PEX-v8-c5U" secondAttribute="trailing" constant="10" id="o6l-10-iTc"/>
-                            <constraint firstItem="FXx-uy-6YC" firstAttribute="top" secondItem="6WO-GK-r0v" secondAttribute="bottom" constant="-10" id="t9Y-bW-Kg4"/>
-                            <constraint firstItem="Bkw-Nx-5HF" firstAttribute="trailing" secondItem="FXx-uy-6YC" secondAttribute="trailing" id="zNI-nT-yVu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bkw-Nx-5HF"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="9e0-Sa-wMm"/>
                     <connections>
                         <outlet property="alertButton" destination="6WO-GK-r0v" id="NBo-u4-YKU"/>
                         <outlet property="mapView" destination="X7A-h7-qcG" id="zLD-IG-DJy"/>
@@ -1361,9 +1354,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGw-CJ-od2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7092.753623188406" y="-275.22321428571428"/>
+            <point key="canvasLocation" x="7183" y="-241"/>
         </scene>
-        <!--ChatVC-->
+        <!--Item-->
         <scene sceneID="fUB-J6-OqC">
             <objects>
                 <viewController storyboardIdentifier="ChatVC" id="Fxt-B2-Qdt" customClass="ChatVC" customModule="SocialHelp" customModuleProvider="target" sceneMemberID="viewController">
@@ -1373,10 +1366,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6kx-Sx-Mfe"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="stR-o3-Sa4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiz-Pc-xbJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7887" y="-275"/>
+            <point key="canvasLocation" x="7183" y="437"/>
         </scene>
         <!--ProfileVC-->
         <scene sceneID="hSa-k0-knE">
@@ -1482,18 +1476,18 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se unio a socialHelp el 10 septiembre de 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HQ-gl-aDT">
                                         <rect key="frame" x="79.5" y="652" width="255" height="14.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
-                                        <color key="textColor" systemColor="systemGrayColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 0.10 debug" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jn7-it-edL">
                                         <rect key="frame" x="153.5" y="676.5" width="107" height="14.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
-                                        <color key="textColor" systemColor="systemGrayColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U32-87-x46" customClass="MiddleCircleButton" customModule="SocialHelp" customModuleProvider="target">
                                         <rect key="frame" x="124" y="572" width="166" height="40"/>
-                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="ocq-eD-Sen"/>
                                         </constraints>
@@ -1561,7 +1555,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="gBi-ZR-Yba" firstAttribute="top" secondItem="4wv-TR-NZV" secondAttribute="bottom" constant="10" id="3XO-Re-zVS"/>
                                             <constraint firstItem="4wv-TR-NZV" firstAttribute="leading" secondItem="CL6-zD-IO6" secondAttribute="leading" constant="20" id="9EC-mj-b9A"/>
@@ -1576,7 +1570,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgV-5o-sZy">
                                         <rect key="frame" x="30" y="380.5" width="354" height="2"/>
-                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="I4n-Z1-Mrr"/>
                                         </constraints>
@@ -1644,7 +1638,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUh-OG-Syd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8031.884057971015" y="-1260.2678571428571"/>
+            <point key="canvasLocation" x="8020" y="-241"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ulv-vj-uGf">
+            <objects>
+                <tabBarController storyboardIdentifier="InicioVC" automaticallyAdjustsScrollViewInsets="NO" id="BsI-Dw-a0g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8YH-Us-knN">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="38O-co-EE8" kind="relationship" relationship="viewControllers" id="1kC-Dw-CBT"/>
+                        <segue destination="S4X-O6-W77" kind="relationship" relationship="viewControllers" id="0WX-PD-sTq"/>
+                        <segue destination="Fxt-B2-Qdt" kind="relationship" relationship="viewControllers" id="QvT-dZ-ktz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rrs-sc-55K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6335" y="-241"/>
         </scene>
     </scenes>
     <resources>

@@ -35,6 +35,8 @@
 		13B87383231C501E003FDE1B /* Incidents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B87382231C501E003FDE1B /* Incidents.swift */; };
 		13CB6CB5229CCB9400FB7E8B /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB6CB4229CCB9400FB7E8B /* RegisterVC.swift */; };
 		13CB6CBB229CCD4000FB7E8B /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB6CBA229CCD4000FB7E8B /* ResetPasswordVC.swift */; };
+		13E094FE232C180D009D37EC /* NewMessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E094FD232C180D009D37EC /* NewMessagesVC.swift */; };
+		13E09502232C1D46009D37EC /* NewMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E09501232C1D46009D37EC /* NewMessageCell.swift */; };
 		13F8BDBA22E40E430066B236 /* sendCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F8BDB922E40E430066B236 /* sendCodeVC.swift */; };
 		13F8BDBD22E4121C0066B236 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F8BDBC22E4121C0066B236 /* Memory.swift */; };
 		7CBBF46B6F1222A5A467B5E7 /* Pods_SocialHelp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EC9C8FFA112A2E364F4C64 /* Pods_SocialHelp.framework */; };
@@ -72,6 +74,8 @@
 		13B87382231C501E003FDE1B /* Incidents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Incidents.swift; sourceTree = "<group>"; };
 		13CB6CB4229CCB9400FB7E8B /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		13CB6CBA229CCD4000FB7E8B /* ResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVC.swift; sourceTree = "<group>"; };
+		13E094FD232C180D009D37EC /* NewMessagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessagesVC.swift; sourceTree = "<group>"; };
+		13E09501232C1D46009D37EC /* NewMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewMessageCell.swift; path = SocialHelp/Controllers/NewMessageCell.swift; sourceTree = SOURCE_ROOT; };
 		13F8BDB922E40E430066B236 /* sendCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendCodeVC.swift; sourceTree = "<group>"; };
 		13F8BDBC22E4121C0066B236 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
 		26EC9C8FFA112A2E364F4C64 /* Pods_SocialHelp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialHelp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +126,7 @@
 				13095A7722A48161008BA8DE /* ChatVC.swift */,
 				13F8BDB922E40E430066B236 /* sendCodeVC.swift */,
 				13A15DD0231B95D800D23CD4 /* ProfileVC.swift */,
+				13E094FD232C180D009D37EC /* NewMessagesVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 		133AC4AF229D6BA000341B7E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				13E09501232C1D46009D37EC /* NewMessageCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -404,6 +410,7 @@
 				139261F522E400990029DAF4 /* codeDesignTF.swift in Sources */,
 				13095A6E22A47E51008BA8DE /* NavigationView.swift in Sources */,
 				13A15DCC231B6E8900D23CD4 /* SoltarPin.swift in Sources */,
+				13E094FE232C180D009D37EC /* NewMessagesVC.swift in Sources */,
 				13CB6CBB229CCD4000FB7E8B /* ResetPasswordVC.swift in Sources */,
 				132C5A8022A2E23300555BF0 /* RegisterInformationUser.swift in Sources */,
 				13B87383231C501E003FDE1B /* Incidents.swift in Sources */,
@@ -415,6 +422,7 @@
 				13095A7822A48161008BA8DE /* ChatVC.swift in Sources */,
 				13095A7022A47ED3008BA8DE /* ScrollViewController.swift in Sources */,
 				13B87381231C475E003FDE1B /* Reachability.swift in Sources */,
+				13E09502232C1D46009D37EC /* NewMessageCell.swift in Sources */,
 				132C5A8922A2FA4D00555BF0 /* WebServices.swift in Sources */,
 				13095A7622A48148008BA8DE /* AlertVC.swift in Sources */,
 				13CB6CB5229CCB9400FB7E8B /* RegisterVC.swift in Sources */,

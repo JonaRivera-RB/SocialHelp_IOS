@@ -10,11 +10,12 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class ChatVC: UIViewController {
+class NewchatVC: UIViewController {
 
     @IBOutlet weak var contactsTableView: UITableView!
     var userName:String = ""
     var users = [userName2]()
+    var messageController:ChatsVC?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,9 +67,13 @@ class ChatVC: UIViewController {
         }
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func cancelBtnWasPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
-    extension ChatVC : UITableViewDelegate, UITableViewDataSource {
+    extension NewchatVC : UITableViewDelegate, UITableViewDataSource {
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return users.count
         }
@@ -82,7 +87,10 @@ class ChatVC: UIViewController {
         
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             let user = self.users[indexPath.row]
-            //showChatController(user: user)
+            dismiss(animated: true) {
+                self.messageController?.showChatLong(user: user)
+                print("esta hecho el usuario es \(user.name)")
+            }
         }
     }
 

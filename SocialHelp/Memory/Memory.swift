@@ -15,9 +15,15 @@ struct Memory {
     func saveVerificationCode(code:String) {
         defaults.set(code, forKey: "verificationCode")
     }
+    
     func savePhonenumber(code:String) {
         defaults.set(code, forKey: "phonenumber")
     }
+    
+    func saveUserData(userData:UserData) {
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(userData), forKey:"userData")
+    }
+    
     
     func getVerificationCode() -> String? {
         
@@ -34,4 +40,16 @@ struct Memory {
         }
         return nil
     }
+    
+    func getUserData() -> UserData? {
+          if let data = UserDefaults.standard.value(forKey:"userData") as? Data {
+               let userData = try? PropertyListDecoder().decode(UserData.self, from: data)
+               return userData
+           }
+           return nil
+       }
+       
+       func removeUserData() {
+           UserDefaults.standard.removeObject(forKey: "userData")
+       }
 }

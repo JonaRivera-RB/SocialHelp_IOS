@@ -80,9 +80,8 @@ class ProfileVC: UIViewController {
         let alertAction = UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default) { (alerta) in
             try! Auth.auth().signOut()
             GIDSignIn.sharedInstance().signOut()
+            Memory.memory.removeUserData()
             self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
-            //   let authVC = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC")
-            // self.present(authVC!, animated: true, completion: nil)
         }
         let alertActionCancel = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
         alert.addAction(alertAction)

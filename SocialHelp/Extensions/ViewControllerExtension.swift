@@ -8,6 +8,8 @@
 
 import UIKit
 import SwiftMessages
+import Firebase
+import FirebaseAuth
 
 extension UIViewController {
     
@@ -121,7 +123,5 @@ extension UIViewController {
         
         SwiftMessages.show(config: successConfig, view: success)
     }
-    
-    
 }
 

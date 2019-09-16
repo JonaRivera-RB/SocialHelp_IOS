@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+struct BasicUserData {
+    var name = ""
+    var email = ""
+    var urlPhoto = ""
+    var userID = ""
+    
+    init(name:String, email:String, urlPhoto:String, userID:String) {
+        self.name = name
+        self.email = email
+        self.urlPhoto = urlPhoto
+        self.userID = userID
+    }
+}

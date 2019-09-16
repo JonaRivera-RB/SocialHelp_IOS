@@ -82,5 +82,11 @@ class ProfileVC: UIViewController {
         alert.addAction(alertActionCancel)
         present(alert, animated: true)
     }
+    @IBAction func editProfileBtnWasPressed(_ sender: Any) {
+        
+        let inicioVC = self.storyboard?.instantiateViewController(withIdentifier: "editProfileVC")
+        inicioVC?.modalPresentationStyle = .fullScreen
+        self.present(inicioVC!, animated: true, completion: nil)
+    }
     
 }

@@ -8,7 +8,11 @@
 
 import UIKit
 
-class ChatsVC: UIViewController {
+class ChatsVC: UIViewController, NewChatVCDelegate {
+    func showChat(string: String) {
+        print("hola")
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +25,10 @@ class ChatsVC: UIViewController {
     }
     
     @IBAction func NewChatBtnWasPressed(_ sender: Any) {
+        
+//        let navController = UINavigationController(rootViewController: newChatVC)
+//        present(navController, animated: true, completion: nil)
+        
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let newMessageVC:NewChatVC = storyboard.instantiateViewController(withIdentifier: "ChatVC") as! NewChatVC
         newMessageVC.modalPresentationStyle = .fullScreen

@@ -10,10 +10,15 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
+protocol NewChatVCDelegate {
+    func showChat(string: String)
+}
+
 class NewChatVC: UIViewController {
 
     @IBOutlet weak var contactsTableView: UITableView!
         var userName:String = ""
+        var delegate: NewChatVCDelegate?
         
         var users = [BasicUserData]()
         override func viewDidLoad() {
@@ -68,6 +73,7 @@ class NewChatVC: UIViewController {
     @IBAction func cancelBtnWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+
 }
 
     extension NewChatVC : UITableViewDelegate, UITableViewDataSource {
@@ -85,7 +91,7 @@ class NewChatVC: UIViewController {
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             let user = self.users[indexPath.row]
             dismiss(animated: true) {
-                print("regresamos")
+                self.delegate?.showChat(string: "Sent from VCFinal")
             }
         }
     }

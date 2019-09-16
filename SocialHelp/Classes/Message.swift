@@ -7,3 +7,25 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseAuth
+
+class Message {
+    var fromId = ""
+    var name = ""
+    var text = ""
+    var timestamp = ""
+    var toId = ""
+    
+    init(fromId:String, name:String, text:String, timestamp:String, toId:String) {
+        self.fromId = fromId
+        self.name = name
+        self.text = text
+        self.timestamp = timestamp
+        self.toId = toId
+    }
+    
+    func chatPartnerId() -> String? {
+        return fromId == Auth.auth().currentUser?.uid ? toId : fromId
+    }
+}

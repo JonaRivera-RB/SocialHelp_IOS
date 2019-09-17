@@ -23,7 +23,7 @@ extension UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
-        
+    
     func validadContra( in text: String) -> Bool {
         
         let passwordRegex = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*()\\-_=+{}|?>.<,:;~`’]{8,}$"
@@ -91,35 +91,35 @@ extension UIViewController {
         warning.button?.isHidden = true
         var warningConfig = SwiftMessages.defaultConfig
         warningConfig.presentationContext = .window(windowLevel: UIWindow.Level.statusBar)
-
+        
         SwiftMessages.show(config: warningConfig, view: warning)
     }
     
     func showStatusBarWithTitle(text:String, show:Bool) {
         //if show {
-            let status2 = MessageView.viewFromNib(layout: .statusLine)
-                   status2.backgroundView.backgroundColor = UIColor.orange
-                   status2.bodyLabel?.textColor = UIColor.white
-                   status2.configureContent(body: text)
-                   var status2Config = SwiftMessages.defaultConfig
+        let status2 = MessageView.viewFromNib(layout: .statusLine)
+        status2.backgroundView.backgroundColor = UIColor.green
+        status2.bodyLabel?.textColor = UIColor.white
+        status2.configureContent(body: text)
+        var status2Config = SwiftMessages.defaultConfig
         status2Config.duration = .seconds(seconds: 3)
-                   status2Config.presentationContext = .window(windowLevel: UIWindow.Level.normal)
-                   status2Config.preferredStatusBarStyle = .lightContent
-            SwiftMessages.show(config: status2Config, view: status2)
+        status2Config.presentationContext = .window(windowLevel: UIWindow.Level.normal)
+        status2Config.preferredStatusBarStyle = .lightContent
+        SwiftMessages.show(config: status2Config, view: status2)
         //}else {
-          //  SwiftMessages.hide()
+        //  SwiftMessages.hide()
         //}
     }
     
     func showAlertSuccess(title:String, body:String){
         let success = MessageView.viewFromNib(layout: .cardView)
-            success.configureTheme(.success)
-            success.configureDropShadow()
-            success.configureContent(title: title, body: body)
-            success.button?.isHidden = true
-       var successConfig = SwiftMessages.defaultConfig
-            successConfig.presentationStyle = .center
-            successConfig.presentationContext = .window(windowLevel: UIWindow.Level.normal)
+        success.configureTheme(.success)
+        success.configureDropShadow()
+        success.configureContent(title: title, body: body)
+        success.button?.isHidden = true
+        var successConfig = SwiftMessages.defaultConfig
+        successConfig.presentationStyle = .center
+        successConfig.presentationContext = .window(windowLevel: UIWindow.Level.normal)
         
         SwiftMessages.show(config: successConfig, view: success)
     }

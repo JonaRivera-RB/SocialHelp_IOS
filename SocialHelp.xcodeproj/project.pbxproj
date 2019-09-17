@@ -44,6 +44,8 @@
 		13E0950D232C533F009D37EC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E0950C232C533F009D37EC /* Message.swift */; };
 		13F8BDBA22E40E430066B236 /* sendCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F8BDB922E40E430066B236 /* sendCodeVC.swift */; };
 		13F8BDBD22E4121C0066B236 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F8BDBC22E4121C0066B236 /* Memory.swift */; };
+		13F9D321233009F80015BB5B /* UserOnline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9D320233009F80015BB5B /* UserOnline.swift */; };
+		13F9D323233093810015BB5B /* CustomAlertLookForUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9D322233093810015BB5B /* CustomAlertLookForUserVC.swift */; };
 		7CBBF46B6F1222A5A467B5E7 /* Pods_SocialHelp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EC9C8FFA112A2E364F4C64 /* Pods_SocialHelp.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +90,8 @@
 		13E0950C232C533F009D37EC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		13F8BDB922E40E430066B236 /* sendCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendCodeVC.swift; sourceTree = "<group>"; };
 		13F8BDBC22E4121C0066B236 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
+		13F9D320233009F80015BB5B /* UserOnline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOnline.swift; sourceTree = "<group>"; };
+		13F9D322233093810015BB5B /* CustomAlertLookForUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertLookForUserVC.swift; sourceTree = "<group>"; };
 		26EC9C8FFA112A2E364F4C64 /* Pods_SocialHelp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialHelp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		819A1865A3B493C0D42122E2 /* Pods-SocialHelp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialHelp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialHelp/Pods-SocialHelp.release.xcconfig"; sourceTree = "<group>"; };
 		C1CD439095EF03F9251025CF /* Pods-SocialHelp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialHelp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialHelp/Pods-SocialHelp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 				13E09503232C4348009D37EC /* ChatLongVC.swift */,
 				13E09508232C5118009D37EC /* NewChatVC.swift */,
 				13AFD78E232F26ED0060788D /* EditProfileVC.swift */,
+				13F9D322233093810015BB5B /* CustomAlertLookForUserVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				13A15DCE231B7EFC00D23CD4 /* User.swift */,
 				13E0950A232C5310009D37EC /* BasicUserData.swift */,
 				13AFD790232F32FF0060788D /* UserData.swift */,
+				13F9D320233009F80015BB5B /* UserOnline.swift */,
 			);
 			path = Struct;
 			sourceTree = "<group>";
@@ -425,6 +431,7 @@
 				13AFD791232F32FF0060788D /* UserData.swift in Sources */,
 				139261F522E400990029DAF4 /* codeDesignTF.swift in Sources */,
 				13095A6E22A47E51008BA8DE /* NavigationView.swift in Sources */,
+				13F9D321233009F80015BB5B /* UserOnline.swift in Sources */,
 				13E09504232C4348009D37EC /* ChatLongVC.swift in Sources */,
 				13A15DCC231B6E8900D23CD4 /* SoltarPin.swift in Sources */,
 				13E094FE232C180D009D37EC /* ChatsVC.swift in Sources */,
@@ -447,6 +454,7 @@
 				13095A7422A48126008BA8DE /* MapVC.swift in Sources */,
 				133AC4B4229D6CFF00341B7E /* MiddleCircleButton.swift in Sources */,
 				1393318F229C235C00D999FF /* LoginVC.swift in Sources */,
+				13F9D323233093810015BB5B /* CustomAlertLookForUserVC.swift in Sources */,
 				1393318D229C235C00D999FF /* AppDelegate.swift in Sources */,
 				13E0950D232C533F009D37EC /* Message.swift in Sources */,
 				13095A7222A47F9B008BA8DE /* MainVC.swift in Sources */,

@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseAuth
 
 struct UserData : Codable{
     var name = ""
@@ -38,4 +40,5 @@ class UserData2 : NSObject {
     var password:String?
     var phone_number:String?
     var photo:String?
+    
 }

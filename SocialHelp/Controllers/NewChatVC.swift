@@ -10,15 +10,17 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-protocol NewChatVCDelegate {
-    func showChat(string: String)
-}
 
 class NewChatVC: UIViewController {
+
+    
     
     @IBOutlet weak var contactsTableView: UITableView!
     var userName:String = ""
-    var delegate: NewChatVCDelegate?
+    var delegateNewChat:NewChatVCDelegate?
+    
+    var chatController:ChatsVC = ChatsVC()
+   // var delegate: NewChatVCDelegate?
     
     var users = [BasicUserData]()
     override func viewDidLoad() {
@@ -28,13 +30,12 @@ class NewChatVC: UIViewController {
         
         checkIfUserIsLoggedIn()
         fetchUser()
-        navigationItem.title = userName
     }
     
     func fetchUser() {
         DataServices.instance.REF_USERS.observeSingleEvent(of: .value) { (snapshot) in
-            for incident in snapshot.children.allObjects as! [DataSnapshot] {
-                if let dictionary = incident.value as? [String : AnyObject] {
+            for users in snapshot.children.allObjects as! [DataSnapshot] {
+                if let dictionary = users.value as? [String : AnyObject] {
                     let name = dictionary["name"] as? String
                     let email = dictionary["email"] as? String
                     let urlPhoto = dictionary["photo"] as? String
@@ -90,8 +91,8 @@ extension NewChatVC : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let user = self.users[indexPath.row]
-        dismiss(animated: true) {
-            self.delegate?.showChat(string: "Sent from VCFinal")
-        }
+        dismiss(animated: true, completion: {
+            self.delegateNewChat?.showChat(user: user)
+        })
     }
 }

@@ -50,5 +50,4 @@ class NewMessageCell: UITableViewCell {
                self.userImageProgile.image  = #imageLiteral(resourceName: "defaultProfileImage")
            }
        }
-
 }

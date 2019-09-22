@@ -9,15 +9,16 @@
 import Foundation
 import Firebase
 import FirebaseAuth
+import UIKit
 
 class Message {
     var fromId = ""
     var name = ""
     var text = ""
-    var timestamp = ""
+    var timestamp:NSNumber = 0.0
     var toId = ""
     
-    init(fromId:String, name:String, text:String, timestamp:String, toId:String) {
+    init(fromId:String, name:String, text:String, timestamp:NSNumber, toId:String) {
         self.fromId = fromId
         self.name = name
         self.text = text
@@ -27,5 +28,18 @@ class Message {
     
     func chatPartnerId() -> String? {
         return fromId == Auth.auth().currentUser?.uid ? toId : fromId
+    }
+}
+
+
+class MessageNS: NSObject {
+    @objc var fromId:String?
+    @objc var name:String?
+    @objc var text:String?
+    @objc var timestamp:NSNumber?
+    @objc var toId:String?
+    
+    func chatPartnerId() -> String {
+        return (fromId == Auth.auth().currentUser?.uid ? toId : fromId) ?? ""
     }
 }

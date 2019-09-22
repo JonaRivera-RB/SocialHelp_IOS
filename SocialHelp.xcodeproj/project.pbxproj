@@ -12,6 +12,8 @@
 		13095A7222A47F9B008BA8DE /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13095A7122A47F9B008BA8DE /* MainVC.swift */; };
 		13095A7422A48126008BA8DE /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13095A7322A48126008BA8DE /* MapVC.swift */; };
 		13095A7622A48148008BA8DE /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13095A7522A48148008BA8DE /* AlertVC.swift */; };
+		130A4AD2233728F700C25AEC /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130A4AD1233728F700C25AEC /* UserCell.swift */; };
+		130A4AD42337F20100C25AEC /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130A4AD32337F20100C25AEC /* ChatMessageCell.swift */; };
 		131D30C322A6BE0400754101 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 131D30C222A6BE0400754101 /* GoogleService-Info.plist */; };
 		131D30C522A6C9AF00754101 /* client_339133570136-qn37djdkndul4rv7g0it508p47bhhu33.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 131D30C422A6C9AF00754101 /* client_339133570136-qn37djdkndul4rv7g0it508p47bhhu33.apps.googleusercontent.com.plist */; };
 		132C5A7C22A2D21C00555BF0 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132C5A7B22A2D21C00555BF0 /* ViewControllerExtension.swift */; };
@@ -55,6 +57,8 @@
 		13095A7122A47F9B008BA8DE /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		13095A7322A48126008BA8DE /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		13095A7522A48148008BA8DE /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
+		130A4AD1233728F700C25AEC /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		130A4AD32337F20100C25AEC /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		131D30C222A6BE0400754101 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Controllers/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		131D30C422A6C9AF00754101 /* client_339133570136-qn37djdkndul4rv7g0it508p47bhhu33.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_339133570136-qn37djdkndul4rv7g0it508p47bhhu33.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
 		132C5A7B22A2D21C00555BF0 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -251,6 +255,8 @@
 			isa = PBXGroup;
 			children = (
 				13E09506232C5067009D37EC /* NewMessageCell.swift */,
+				130A4AD1233728F700C25AEC /* UserCell.swift */,
+				130A4AD32337F20100C25AEC /* ChatMessageCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -439,6 +445,7 @@
 				13E0950B232C5310009D37EC /* BasicUserData.swift in Sources */,
 				132C5A8022A2E23300555BF0 /* RegisterInformationUser.swift in Sources */,
 				13E09509232C5118009D37EC /* NewChatVC.swift in Sources */,
+				130A4AD2233728F700C25AEC /* UserCell.swift in Sources */,
 				13B87383231C501E003FDE1B /* Incidents.swift in Sources */,
 				132C5A7C22A2D21C00555BF0 /* ViewControllerExtension.swift in Sources */,
 				13E09507232C5067009D37EC /* NewMessageCell.swift in Sources */,
@@ -458,6 +465,7 @@
 				1393318D229C235C00D999FF /* AppDelegate.swift in Sources */,
 				13E0950D232C533F009D37EC /* Message.swift in Sources */,
 				13095A7222A47F9B008BA8DE /* MainVC.swift in Sources */,
+				130A4AD42337F20100C25AEC /* ChatMessageCell.swift in Sources */,
 				13AFD78F232F26ED0060788D /* EditProfileVC.swift in Sources */,
 				13555EE32316B5B9006198F7 /* CircleDesignButton.swift in Sources */,
 			);
